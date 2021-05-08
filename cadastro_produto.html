@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        
+
+        .cadastro-container {
+            position: relative;
+            width: 423px;
+            height: 428px;
+
+            background: #D4DCDD;
+        }
+
+        #top-bar {
+            position: absolute;
+            width: 50px;
+            height: 32px;
+            left: 0px;
+            top: 0px;
+
+            background: #C4C4C4;
+        }
+
+        #bottom-bar {
+            position: absolute;
+            width: 423px;
+            height: 25px;
+            left: 0px;
+            top: 403px;
+
+            background: #C4C4C4;
+        }
+
+        .bottom-text {
+            position: absolute;
+            width: 418px;
+            height: 12px;
+            left: 2px;
+            top: 410px;
+
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 14px;
+            text-align: center;
+
+            color: #000000;
+        }
+
+        .logo-layout {
+            position: absolute;
+            width: 51px;
+            height: 25px;
+            left: 7px;
+            top: 3px;
+
+            background: #FCEAEA;
+        }
+
+        #text-family {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 14px;
+            /* identical to box height */
+            text-align: center;
+
+            color: #000000;
+        }
+
+        .text-cadastaro {
+            position: absolute;
+            width: 55px;
+            height: 14px;
+            left: 91px;
+            top: 9px;
+        }
+
+        .text-consulta {
+            position: absolute;
+            width: 54px;
+            height: 15px;
+            left: 157px;
+            top: 9px;
+        }
+
+        .text-logo {
+            position: absolute;
+            width: 31px;
+            height: 14px;
+            left: 17px;
+            top: 8px;
+
+        }
+
+        .text-position1 {
+            position: absolute;
+            width: 54px;
+            height: 14px;
+            left: 52px;
+            top: 56px;
+
+        }
+
+        .text-position2 {
+            position: absolute;
+            width: 52px;
+            height: 14px;
+            left: 52px;
+            top: 113px;
+        }
+
+        .text-position3 {
+            position: absolute;
+            width: 32px;
+            height: 14px;
+            left: 52px;
+            top: 167px;
+        }
+
+        .text-position4 {
+            position: absolute;
+            width: 128px;
+            height: 14px;
+            left: 52px;
+            top: 224px;
+
+        }
+
+        .text-position5 {
+            position: absolute;
+            width: 64px;
+            height: 14px;
+            left: 52px;
+            top: 281px;
+        }
+
+        .text-salvar {
+            position: absolute;
+            width: 88px;
+            height: 16px;
+            left: 60px;
+            top: 368px;
+
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 16px;
+            text-align: center;
+
+            color: #F11212;
+        }
+
+        .text-cancelar {
+            position: absolute;
+            width: 88px;
+            height: 16px;
+            left: 288px;
+            top: 368px;
+
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 16px;
+            text-align: center;
+
+            color: #F4FFFF;
+        }
+
+        #box-write {
+            background: #F8FCFC;
+            border-radius: 10px;
+        }
+
+        .box-position1 {
+            position: absolute;
+            width: 318px;
+            height: 28px;
+            left: 52px;
+            top: 76px;
+        }
+
+        .box-position2 {
+            position: absolute;
+            width: 318px;
+            height: 28px;
+            left: 52px;
+            top: 133px;
+        }
+
+        .box-position3 {
+            position: absolute;
+            width: 318px;
+            height: 28px;
+            left: 52px;
+            top: 187px;
+
+        }
+
+        .box-position4 {
+            position: absolute;
+            width: 318px;
+            height: 28px;
+            left: 52px;
+            top: 244px;
+        }
+
+        .box-position5 {
+            position: absolute;
+            width: 326px;
+            height: 55px;
+            left: 52px;
+            top: 299px;
+        }
+
+        .button-salvar {
+            position: absolute;
+            width: 98px;
+            height: 25px;
+            left: 55px;
+            top: 363px;
+
+            background: #5C8997;
+            border-radius: 15px;
+        }
+
+        .button-cancelar {
+            position: absolute;
+            width: 98px;
+            height: 25px;
+            left: 283px;
+            top: 364px;
+
+            background: #FF8F96;
+            border-radius: 15px;
+        }
+
+        /* ↓ Ajustes ↓ */
+        * {
+            /* Com * colcoar o Style em todos os componenetes  */
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        .topo {
+            height: 32px;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            /* padding-top: 3px;
+            padding-bottom: 3px; */
+            display: flex;
+
+            background-color: #C4C4C4;
+        }
+
+        .bottom {
+            height: 25px;
+            padding-top: 7px;
+            padding-bottom: 6px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 14px;
+            text-align: center;
+
+            color: #000000;
+            background: #C4C4C4;
+        }
+
+        .logo {
+            display: flex;
+            width: 50px;
+            height: 25px;
+            margin-top: 3px;
+            margin-bottom: 4px;
+            margin-left: 7px;
+            align-items: center;
+            justify-content: center;
+
+            background: #FCEAEA;
+        }
+
+        .menu {
+            
+            padding-bottom: 9px;
+            padding-top: 9px;
+        }
+
+        .itemMenu {
+            display: inline;
+            margin-right: 11px;
+            
+        }
+
+        .containerForm {
+            background: #D4DCDD;
+            display: block;
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-top: 24px;
+            padding-bottom: 15px;
+        }
+        .itemContainer {
+            margin-left: 50px;
+            margin-right: 50px;
+            margin-bottom: 9px;
+        }
+        .buttonContainer {
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .buttonSalvar {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 16px;
+            text-align: center;
+
+            color: #F11212;
+            background: #5C8997;
+        }
+
+        .buttonCancelar {
+
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 16px;
+            text-align: center;
+
+            color: #F4FFFF;
+            background: #FF8F96;
+        }
+
+        label {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 14px;
+            color: #000000;
+            /* margin-left: 50px; */
+            width: auto;
+
+        }
+
+        input,
+        select {
+            width: 100%;
+            height: 28px;
+            border-radius: 10px;
+            margin-top: 6px;
+            margin-bottom: 9px;
+            resize: none;
+
+            background: #F8FCFC;
+        }
+
+        textarea {
+            width: 100%;
+            height: 55px;
+            border-radius: 10px;
+            margin-top: 6px;
+            margin-bottom: 9px;
+            resize: none;
+
+            background: #F8FCFC;
+        }
+
+        button {
+            width: 98px;
+            height: 25px;
+            left: 55px;
+            top: 363px;
+
+            border-radius: 15px;
+        }
+    </style>
+
+    <title>
+        Cadastro de Produto
+    </title>
+
+</head>
+
+<body>
+    <!-- 
+        Feito tudo com div (ERRADO)
+        <div class="cadastro-container">
+        <div id="top-bar"></div>
+        <div class="logo-layout"></div>
+        <div id="text-family" class="text-logo">Logo</div>
+        <div id="text-family" class="text-cadastaro"> Cadastrar</div>
+        <div id="text-family" class="text-consulta">Consulta</div>
+        <div id="text-family" class="text-position1">Descrição</div>
+        <div id="box-write" class="box-position1"></div>
+        <div id="text-family" class="text-position2">Categoria</div>
+        <div id="box-write" class="box-position2"></div>
+        <div id="text-family" class="text-position3">Preço</div>
+        <div id="box-write" class="box-position3"></div>
+        <div id="text-family" class="text-position4">Quantidade em estoque</div>
+        <div id="box-write" class="box-position4"></div>
+        <div id="text-family" class="text-position5">Observação</div>
+        <div id="box-write" class="box-position5"></div>
+        <div class="button-salvar"></div> <div class="text-salvar">Salvar</div> 
+        <div class="button-cancelar"></div> <div class="text-cancelar"> Cancelar</div>
+
+        <div id="bottom-bar">  </div><div class="bottom-text">Direitos autorais reservados</div>
+        
+    </div> -->
+    <div class="topo">
+        <div class="logo">LOGO</div>
+        <div class="menu">
+            <ul>
+                <li class="itemMenu">Cadastros</li>
+                <li class="itemMenu">Consultas</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="containerForm">
+        <label>Descrição</label>
+        <input />
+        <label>Categoria</label>
+        <select>
+            <option value="">Frutas</option>
+            <option value="">Verduras</option>
+            <option value="">Chocolate</option>
+        </select>
+        <label>Preço</label>
+        <input />
+        <label>Quantidade em estoque</label>
+        <input />
+        <label>Observação</label>
+        <textarea name="" id="" cols="30" rows="5"></textarea>
+        <div class="buttonContainer">
+            <button class="buttonSalvar">Salvar</button>
+            <button class="buttonCancelar">Cancelar</button>
+        </div>
+    </div>
+    <div class="bottom">Direitos autorais reservados</div>
+    <!-- ----------------------------------------------------- -->
+    <div class="topo">
+        <div class="logo">LOGO</div>
+        <div class="menu">
+            <ul>
+                <li class="itemMenu">Cadastros</li>
+                <li class="itemMenu">Consultas</li>
+            </ul>
+        </div>
+    </div>
+    <div class="containerForm">
+        <div class="itemContainer">
+            <label>Descrição</label>
+            <input />
+        </div>
+
+        <div class="itemContainer">
+            <label>Categoria</label>
+            <select>
+                <option>Frutas</option>
+                <option>Verduras</option>
+                <option>Bebidas</option>
+            </select>
+        </div>
+
+        <div class="itemContainer">
+            <label>Preço</label>
+            <input />
+        </div>
+
+        <div class="itemContainer">
+            <label>Quantidade em estoque</label>
+            <input />
+        </div>
+
+        <div class="itemContainer">
+            <label>Observação</label>
+            <textarea>
+
+             </textarea>
+        </div>
+        <div class="buttonContainer">
+            <button class="buttonSalvar">Salvar</button>            
+            <button class="buttonCancelar">Cancelar</button>
+        </div>
+    </div>
+    <div class="bottom">Direitos autorais reservados</div>
+</body>
+
+</html>
