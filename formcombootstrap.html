@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .botao:not(:disabled):not(.disabled) {
+            cursor: pointer;
+        }
+
+        [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+            cursor: pointer;
+        }
+        [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+            cursor: pointer;
+        }
+        .botao-outline-secondary {
+            color: #6c757d;
+            border-color: #6c757d;
+        }
+        .botao {
+            display: inline-block;
+            font-weight: 400;
+            color: #212529;
+            text-align: center;
+            vertical-align: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            background-color: transparent;
+            border: 1px solid transparent;
+            padding: .375rem .75rem;
+            font-size: 1rem;
+            line-height: 1.5;
+            border-radius: .25rem;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="form-group">
+        <label for="descricao">Descrição</label>
+        <input id="descricao" placeholder="Descreva o produto" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="categoria">Categoria</label>
+        <select id="categoria" class="form-control">
+            <option>Frutas</option>
+            <option>Verduras</option>
+            <option>Bebidas</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="preco">Preço</label>
+        <input id="preco" class="form-control"/>
+    </div>
+    <div class="form-group">
+        <label for="qtd">Quantidade em estoque</label>
+        <input id="qtd" class="form-control"/>
+    </div>
+    <div class="form-group">
+        <label for="obs">Observação</label>
+        <textarea id="obs" class="form-control"></textarea>
+    </div>
+    <div class="container">
+        <button class="botao botao-outline-secondary">Salvar</button>            
+        <button class="btn btn-outline-secondary">Cancelar</button>
+    </div>
+</body>
+</html>
