@@ -1,0 +1,159 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, inicial-scale=1.0">
+    <link rel="stylesheet" href="mediadropdownMenu.css">
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .cabecalho {
+            width: 100%;
+            height: 10%;
+            border: 2px dashed red;
+            border-radius: 10px;
+            padding-bottom: 10px;
+        }
+
+        nav{
+           
+            width: 100%;
+            height: 10%;
+            border: 2px dashed red;  
+        }
+
+        section{
+           
+            border: 2px dashed red; 
+            width: 100%; 
+            height: 50%;
+        }
+
+        article{
+           
+            border: 2px dashed red; 
+            width: 100%; 
+            height: 50%;
+        }
+        footer{           
+            width: 100%;
+            height: 10%;
+            border: 2px dashed red;  
+        }
+
+        aside {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 2px dashed red;
+            width: 100%;
+            height: 100%;
+            padding: 10px;
+            overflow: auto;
+            
+        }
+
+        .centro{
+            display: flex;
+            height: 70%;
+        }
+        .img-container {
+            display: flex;
+            padding: 3px; 
+            width: 250px;
+            height: 150px;
+            border: 2px solid green; 
+            border-radius: 10px; 
+            margin-bottom: 5px;  
+            background-color: black;
+        }
+        .img-container img {
+            max-width:200px;
+            max-height:150px;
+            width: auto;
+            height: auto;
+            border-radius: 10px; 
+            border: 2px solid white;
+            background-color: white;
+            
+        }
+        .img-container p {
+            padding: 5px;
+            width: 100%;
+            height: 100%;
+            border: 1px solid gray;
+            margin-left: 5px;
+            font-size: 14px;
+            flex-direction: column;
+            max-width: 200px; 
+            overflow: auto; 
+            border-radius: 10px;
+            background-color: white;
+            display: flex;
+            justify-content: flex-start;
+        }
+        
+        body:-webkit-scrollbar {
+            width: 10px
+        } 
+
+        body:-webkit-scrollbar-thumb {   
+            background-color: red;   
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="cabecalho">
+        <h1>Cabeçalho</h1>
+    </div>
+    <nav>
+        <ul style="height: 100%;">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <div class="centro">
+        <div style="width: 66%">
+            <section>
+                <h1>Section</h1>
+            </section>
+
+            <article>
+                <h1>Article</h1>
+            </article>
+        </div>
+        <div style="width: 34%">
+            <aside>
+                <h1>Aside</h1>
+                <div class="img-container">
+                    <img src="../images/amongyellow.png" alt="among orange" >
+                    <p>Amongus amarelo</p>
+                </div>
+                <div class="img-container"> 
+                    <img src="../images/amongblack.png" alt="ovo">
+                    <p>Among us preto</p> 
+                </div>
+                <div class="img-container">
+                    <img src="../images/amongblue.png" alt="ovo">
+                    <p>Amongus azul claro</p>
+                </div>
+                
+            </aside>
+        </div>
+    </div>
+    <footer>
+        <h1>footer</h1>
+    </footer>
+</body>
+
+</html>
