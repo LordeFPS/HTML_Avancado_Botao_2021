@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+   input[type=text]{
+       width: 100%;
+       padding: 15px;
+       border-radius: 10px;
+   }
+   input[type=text]:focus{
+       background-color: yellow;
+   }
+
+   input:checked{
+    height: 50px;
+    width: 50px;
+    
+   }
+
+  img{
+       /* Precisa (position: absolute;) para usar z-index */
+       left: 0px;
+       top: 0px;
+   }
+
+</style>
+</head>
+<body>
+<img style="z-index: 1;" src="../images/amongblack.png" width="100" height="140">
+<img src="../images/amongblue.png" width="100" height="140">
+
+<p style="z-index: 2;">Because the image has a z-index of -1, it will be placed behind the heading.</p>
+
+<input type="text" placeholder="Informe nome" />
+<input type="text" placeholder="Informe fone" />
+<input type="text" placeholder="Informe email" />
+<input type="text" placeholder="Informe idade" />
+
+<input id="label1" type="checkbox"> <label for="label1">Livro</label></input>
+<input id="label2" type="checkbox"> <label for="label2">Livro</label></input>
+<input id="label3" type="checkbox"> <label for="label3">Livro</label></input>
+<input id="label4" type="checkbox"> <label for="label4">Livro</label></input>
+
+</body>
+</html>
