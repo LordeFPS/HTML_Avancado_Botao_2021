@@ -1,0 +1,17 @@
+@import "color";
+
+@mixin card {
+    max-width: 250px;
+    max-width: 150px;
+    width: auto;
+    height: auto;
+    border: $bgborderColorCard solid 2px;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+@mixin card2 {
+    @include card;
+    border-radius: 50px;
+}
+
