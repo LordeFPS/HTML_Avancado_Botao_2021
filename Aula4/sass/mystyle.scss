@@ -1,0 +1,58 @@
+$bgcolor: lightblue;
+$bgcolorContainer: green;
+$textColor: black;
+$textColorHover: white; 
+$fontsize: 18px;
+$fontsizeTitle: 24px;
+$fontsizeContent: 16px;
+$bgcolorLink: navajowhite;
+$bgcolorLinkHover: yellow;
+
+
+
+
+body {
+    background-color: $bgcolor;
+    color: $textColor;
+    font-size: $fontsize;
+}
+
+.container {
+    background-color: $bgcolorContainer;
+    border-radius: 8px;
+    padding-left: 5px;
+}
+
+.container--title {
+    font-size: $fontsizeTitle;
+}
+
+.container--content {
+    font-size: $fontsizeContent;
+}
+
+.listaContainer {
+    margin-top: 20px;
+    width: 100%;
+    border: red solid 1px;
+    border-radius: 8px;
+}
+
+.listaContainer--livros {
+    list-style-type: none
+
+}
+
+.listaContainer--livros--item {
+    display: inline;
+    background-color: $bgcolorLink;
+    padding: 5px 10px 5px 10px;
+    border-radius: 8px;
+    margin-left: 10px;
+    &:hover{
+        background-color: $bgcolorLinkHover;
+    }
+    a {
+        text-decoration: none;
+    }
+}

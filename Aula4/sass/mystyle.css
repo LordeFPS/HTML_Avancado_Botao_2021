@@ -1,0 +1,46 @@
+body {
+  background-color: lightblue;
+  color: black;
+  font-size: 18px;
+}
+
+.container {
+  background-color: green;
+  border-radius: 8px;
+  padding-left: 5px;
+}
+
+.container--title {
+  font-size: 24px;
+}
+
+.container--content {
+  font-size: 16px;
+}
+
+.listaContainer {
+  margin-top: 20px;
+  width: 100%;
+  border: red solid 1px;
+  border-radius: 8px;
+}
+
+.listaContainer--livros {
+  list-style-type: none;
+}
+
+.listaContainer--livros--item {
+  display: inline;
+  background-color: navajowhite;
+  padding: 5px 10px 5px 10px;
+  border-radius: 8px;
+  margin-left: 10px;
+}
+.listaContainer--livros--item:hover {
+  background-color: yellow;
+}
+.listaContainer--livros--item a {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=mystyle.css.map */
