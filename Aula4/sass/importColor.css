@@ -1,0 +1,86 @@
+body {
+  background-color: lightblue;
+  color: black;
+  font-size: 18px;
+}
+
+.container {
+  background-color: green;
+  border-radius: 8px;
+  padding-left: 5px;
+}
+
+.container--title {
+  font-size: 24px;
+}
+
+.container--content {
+  font-size: 16px;
+}
+
+.listaContainer {
+  margin-top: 20px;
+  width: 100%;
+  border: red solid 1px;
+  border-radius: 8px;
+}
+
+.listaContainer--livros {
+  list-style-type: none;
+}
+
+.listaContainer--livros--item {
+  display: inline;
+  background-color: navajowhite;
+  padding: 5px 10px 5px 10px;
+  border-radius: 8px;
+  margin-left: 10px;
+}
+.listaContainer--livros--item:hover {
+  background-color: yellow;
+}
+.listaContainer--livros--item a {
+  text-decoration: none;
+}
+
+.foto {
+  max-width: 250px;
+  max-width: 150px;
+  width: auto;
+  height: auto;
+  border: orangered solid 2px;
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.foto2 {
+  max-width: 250px;
+  max-width: 150px;
+  width: auto;
+  height: auto;
+  border: orangered solid 2px;
+  border-radius: 8px;
+  padding: 10px;
+  border-radius: 50px;
+  margin-left: 10px;
+}
+
+.button, .button--delete, .button--save {
+  width: 100px;
+  height: 20px;
+  border-radius: 8px;
+  border: orangered solid 2px;
+}
+
+.button--save {
+  background-color: blue;
+  color: white;
+}
+
+.button--delete {
+  background-color: white;
+  color: blue;
+}
+
+/*# sourceMappingURL=importColor.css.map */
